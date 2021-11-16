@@ -1,7 +1,7 @@
 function Dictionary() {
   this.userDict = {};
   this.systemDict = {};
-  this.dictionary_name = 'SKK-JISYO.S.gz';
+  this.dictionary_name = 'SKK-JISYO.S';
   if (localStorage.getItem('system-dictionary-name')) {
     this.dictionary_name = localStorage.getItem('system-dictionary-name');
   }
@@ -86,7 +86,7 @@ Dictionary.prototype.log = function(obj) {
 Dictionary.prototype.doUpdate = function(fs) {
   var self = this;
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', 'http://skk-dict-mirror.appspot.com/' + this.dictionary_name);
+  xhr.open('GET', 'https://github.com/snmsts/chrome-skk/releases/download/dict/' + this.dictionary_name);
   self.log({status:'loading'});
   xhr.onreadystatechange = function() {
     if (xhr.readyState != 4) {

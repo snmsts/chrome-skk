@@ -42,7 +42,8 @@
   ],
   "permissions": [
     "input",
-    "http://skk-dict-mirror.appspot.com/*",
-    "https://skk-dict-mirror.appspot.com/*"
+    "https://github.com/snmsts/chrome-skk/releases/download/dict/*",
+    "https://github-releases.githubusercontent.com/*",
+    "https://objects.githubusercontent.com/*"
   ]
 }

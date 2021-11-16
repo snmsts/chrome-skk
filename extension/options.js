@@ -29,7 +29,7 @@ function onload() {
   var inputs = [];
   for (var i = 0; i < dictionary_suffixes.length; i++) {
     var suffix = dictionary_suffixes[i];
-    var dict_name = 'SKK-JISYO.' + suffix + '.gz';
+    var dict_name = 'SKK-JISYO.' + suffix;
     var li = document.createElement('li');
     var input = document.createElement('input');
     input.type = 'radio';
